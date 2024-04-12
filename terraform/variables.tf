@@ -22,3 +22,7 @@ variable "environment" {
 variable "zone_name" {
   default = "roboshopin.site"
 }
+
+variable "app_version" {
+  
+}
