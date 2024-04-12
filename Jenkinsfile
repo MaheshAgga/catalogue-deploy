@@ -28,14 +28,14 @@ pipeline {
                """
             }
         }
-        stage('Init') {
-            steps {
-               sh """
-                    cd terraform
-                    terraform init 
-               """
-            }
-        }
+        // stage('Init') {
+        //     steps {
+        //        sh """
+        //             cd terraform
+        //             terraform init --backend-config=${params.environment}/
+        //        """
+        //     }
+        // }
         //  stage('plan') {
         //     steps {
         //        sh """
