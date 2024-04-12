@@ -8,11 +8,11 @@ pipeline {
     //     packageVersion = ''
     //     nexusURL = '172.31.36.234:8081'
     // }
-//     options {
-//        timeout(time: 1, unit: 'HOURS')
-//        disableConcurrentBuilds()
-//      ansiColor('xterm')
-//    }
+    options {
+       timeout(time: 1, unit: 'HOURS')
+       disableConcurrentBuilds()
+        ansiColor('xterm')
+   }
 
    parameters {
          string(name: 'version', defaultValue: '1.2.0', description: 'What is the artifact version?')
