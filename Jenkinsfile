@@ -32,18 +32,18 @@ pipeline {
             steps {
                sh """
                     cd terraform
-                    terraform init --backend-config=${params.environment}/backend.tf -reconfigure
+                    terraform init 
                """
             }
         }
-         stage('plan') {
-            steps {
-               sh """
-                    cd terraform
-                    terraform plan -var-file=${params.environment}/${params.environment}.tfvars
-               """
-            }
-        }
+        //  stage('plan') {
+        //     steps {
+        //        sh """
+        //             cd terraform
+        //             terraform plan -var-file=${params.environment}/${params.environment}.tfvars
+        //        """
+        //     }
+        // }
     }      
     //post build
     post {
