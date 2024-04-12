@@ -23,10 +23,10 @@ variable "zone_name" {
   default = "roboshopin.site"
 }
 
-variable "app_version" {
+# variable "app_version" {
   
-}
+# }
 
-variable "iam_instance_profile" {
-  default = "ShellScriptRoleForRoboshop"
-}
+# variable "iam_instance_profile" {
+#   default = "roboshopshell"
+# }
